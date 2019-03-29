@@ -10,7 +10,7 @@
     "test": "babel-node examples/test",
     "testupdate": "babel-node examples/updatePosting",
     "testsign": "babel-node examples/signature",
-    "start": "cross-env PORT=8000 babel-node ./bin/www",
+    "start": "cross-env PORT=8000 babel-node ./bin/www --presets es2015,stage-2",
     "debug": "cross-env DEBUG=yoyow-faucet nodemon ./bin/www --exec babel-node",
     "build": "webpack --progress --colors"
   },
@@ -22,13 +22,13 @@
     "debug": "~2.6.3",
     "ejs": "~2.5.6",
     "express": "~4.15.2",
-    "morgan": "~1.8.1",
+    "morgan": "^1.9.1",
     "mysql": "^2.13.0",
     "mysql-queues": "^1.0.0",
     "nodegrass": "0.0.3",
     "request": "^2.85.0",
     "serve-favicon": "~2.4.2",
-    "yoyowjs-lib": "git+ssh://git@demo.yoyow.org:yoyowjs-lib.git"
+    "yoyowjs-lib": "git+https://github.com/yoyow-org/yoyowjs-lib.git"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
