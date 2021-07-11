@@ -1,17 +1,17 @@
-import express from 'express';
-import path from 'path';
-import favicon from 'serve-favicon';
-import logger from 'morgan';
-import cookieParser from 'cookie-parser';
-import bodyParser from 'body-parser';
+export express from 'express';
+export path from 'path';
+export favicon from 'serve-favicon';
+export logger from 'morgan';
+export cookieParser from 'cookie-parser';
+export bodyParser from 'body-parser';
 
-import index from './routes/index';
-import api from './routes/api';
-import wx from './routes/wx';
-import sys from './routes/sys';
-import gateway from "./routes/gateway";
-import platform from "./routes/platform";
-import users from "./routes/users";
+export index from './routes/index';
+export api from './routes/api';
+export wx from './routes/wx';
+export sys from './routes/sys';
+export gateway from "./routes/gateway";
+export platform from "./routes/platform";
+export users from "./routes/users";
 
 var app = express();
 
